@@ -22,6 +22,7 @@
     <tx:annotation-driven transaction-manager="transactionManager"/>
 
     <bean class="org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor"/>
+    
     <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
         <property name="persistenceProviderClass" value="org.hibernate.ejb.HibernatePersistence"/>
         <property name="dataSource" ref="myContactDataSource"/>
@@ -31,7 +32,7 @@
     </bean>
 
     <!-- Spring Data -->
-    <jpa:repositories base-package="uaiContacts.repository"
+    <jpa:repositories base-package="info.hb.repository"
                       entity-manager-factory-ref="entityManagerFactory"
                       transaction-manager-ref="transactionManager"/>
                       

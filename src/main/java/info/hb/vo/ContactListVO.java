@@ -5,60 +5,62 @@ import info.hb.model.Contact;
 import java.util.List;
 
 public class ContactListVO {
-    private int pagesCount;
-    private long totalContacts;
 
-    private String actionMessage;
-    private String searchMessage;
+	private int pagesCount;
+	private long totalContacts;
 
-    private List<Contact> contacts;
+	private String actionMessage;
+	private String searchMessage;
 
-    public ContactListVO() {
-    }
+	private List<Contact> contacts;
 
-    public ContactListVO(int pages, long totalContacts, List<Contact> contacts) {
-        this.pagesCount = pages;
-        this.contacts = contacts;
-        this.totalContacts = totalContacts;
-    }
+	public ContactListVO() {
+	}
 
-    public int getPagesCount() {
-        return pagesCount;
-    }
+	public ContactListVO(int pages, long totalContacts, List<Contact> contacts) {
+		this.pagesCount = pages;
+		this.contacts = contacts;
+		this.totalContacts = totalContacts;
+	}
 
-    public void setPagesCount(int pagesCount) {
-        this.pagesCount = pagesCount;
-    }
+	public int getPagesCount() {
+		return pagesCount;
+	}
 
-    public List<Contact> getContacts() {
-        return contacts;
-    }
+	public void setPagesCount(int pagesCount) {
+		this.pagesCount = pagesCount;
+	}
 
-    public void setContacts(List<Contact> contacts) {
-        this.contacts = contacts;
-    }
+	public List<Contact> getContacts() {
+		return contacts;
+	}
 
-    public long getTotalContacts() {
-        return totalContacts;
-    }
+	public void setContacts(List<Contact> contacts) {
+		this.contacts = contacts;
+	}
 
-    public void setTotalContacts(long totalContacts) {
-        this.totalContacts = totalContacts;
-    }
+	public long getTotalContacts() {
+		return totalContacts;
+	}
 
-    public String getActionMessage() {
-        return actionMessage;
-    }
+	public void setTotalContacts(long totalContacts) {
+		this.totalContacts = totalContacts;
+	}
 
-    public void setActionMessage(String actionMessage) {
-        this.actionMessage = actionMessage;
-    }
+	public String getActionMessage() {
+		return actionMessage;
+	}
 
-    public String getSearchMessage() {
-        return searchMessage;
-    }
+	public void setActionMessage(String actionMessage) {
+		this.actionMessage = actionMessage;
+	}
 
-    public void setSearchMessage(String searchMessage) {
-        this.searchMessage = searchMessage;
-    }
+	public String getSearchMessage() {
+		return searchMessage;
+	}
+
+	public void setSearchMessage(String searchMessage) {
+		this.searchMessage = searchMessage;
+	}
+
 }

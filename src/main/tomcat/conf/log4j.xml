@@ -27,6 +27,7 @@
 		<appender-ref ref="FILE" />
 		<appender-ref ref="ASYNC" />
 	</logger>
+	
 	<logger name="com.events.log.SessionListener">
 		<level value="INFO" />
 		<appender-ref ref="FILE" />

@@ -7,17 +7,16 @@ import javax.persistence.Id;
 @Entity
 public class Contact {
 
-    @Id
-    @GeneratedValue
-    private int id;
+	@Id
+	@GeneratedValue
+	private int id;
 	private String name;
 	private String phoneNumber;
 	private String email;
-	
-	public Contact(){
-		
+
+	public Contact() {
 	}
-	
+
 	public Contact(String name, String phoneNumber, String email, int id) {
 		super();
 		this.name = name;
@@ -25,15 +24,15 @@ public class Contact {
 		this.email = email;
 	}
 
-    public int getId() {
-        return id;
-    }
+	public int getId() {
+		return id;
+	}
 
-    public void setId(int id) {
-        this.id = id;
-    }
+	public void setId(int id) {
+		this.id = id;
+	}
 
-    public String getName() {
+	public String getName() {
 		return name;
 	}
 
@@ -57,18 +56,19 @@ public class Contact {
 		this.email = email;
 	}
 
-    @Override
-    public boolean equals(Object object) {
-        if (object instanceof Contact){
-            Contact contact = (Contact) object;
-            return contact.id == id;
-        }
+	@Override
+	public boolean equals(Object object) {
+		if (object instanceof Contact) {
+			Contact contact = (Contact) object;
+			return contact.id == id;
+		}
 
-        return false;
-    }
+		return false;
+	}
 
-    @Override
-    public int hashCode() {
-        return id;
-    }
+	@Override
+	public int hashCode() {
+		return id;
+	}
+
 }

@@ -9,8 +9,9 @@ import org.springframework.web.servlet.ModelAndView;
 @RequestMapping(value = "/protected/home")
 public class IndexController {
 
-    @RequestMapping(method = RequestMethod.GET)
-    public ModelAndView welcome() {
-        return new ModelAndView("welcomePage");
-    }
+	@RequestMapping(method = RequestMethod.GET)
+	public ModelAndView welcome() {
+		return new ModelAndView("welcomePage");
+	}
+
 }

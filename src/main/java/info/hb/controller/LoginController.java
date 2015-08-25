@@ -9,8 +9,9 @@ import org.springframework.web.servlet.ModelAndView;
 @RequestMapping("/login")
 public class LoginController {
 
-    @RequestMapping(method = {RequestMethod.GET, RequestMethod.POST, RequestMethod.DELETE, RequestMethod.PUT})
-    public ModelAndView doGet() {
-        return new ModelAndView("login");
-    }
+	@RequestMapping(method = { RequestMethod.GET, RequestMethod.POST, RequestMethod.DELETE, RequestMethod.PUT })
+	public ModelAndView doGet() {
+		return new ModelAndView("login");
+	}
+
 }
