@@ -11,5 +11,11 @@
 * Twitter Bootstrap - A CSS library that will help us with a good looking style
 * JQuery - Combined with Twitter Bootstrap to give some animation to our HTML components
 
+## 打包部署
+
+> 运行命令
+
+`mvn clean install tomcat7:run`
+
 > 参考 [http://uaihebert.com/complete-web-application-angular-twitter-bootstrap-spring-mvc-data-and-security/]
 
