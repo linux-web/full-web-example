@@ -13,11 +13,15 @@
 
 ## 打包部署
 
-> 运行命令
+> 运行测试命令
 
 `mvn clean install tomcat7:run`
 
 访问：http://localhost:8080/full-web-example
+
+> 运行打包命令
+
+`mvn clean package`
 
 > 参考 [http://uaihebert.com/complete-web-application-angular-twitter-bootstrap-spring-mvc-data-and-security/]
 
