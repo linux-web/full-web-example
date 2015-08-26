@@ -17,5 +17,7 @@
 
 `mvn clean install tomcat7:run`
 
+访问：http://localhost:8080/full-web-example
+
 > 参考 [http://uaihebert.com/complete-web-application-angular-twitter-bootstrap-spring-mvc-data-and-security/]
 
